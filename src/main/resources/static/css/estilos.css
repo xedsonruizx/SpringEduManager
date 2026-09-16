@@ -1,0 +1,84 @@
+:root {
+  --sem-primary: #4f46e5;
+  --sem-primary-dark: #3730a3;
+}
+
+body {
+  background-color: #f4f6fb;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  letter-spacing: .3px;
+}
+
+.navbar .nav-link {
+  font-weight: 500;
+}
+
+.card {
+  border-radius: .75rem;
+}
+
+.hover-card {
+  transition: transform .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.hover-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 .75rem 1.5rem rgba(15, 23, 42, .12) !important;
+}
+
+.btn {
+  border-radius: .5rem;
+}
+
+.btn-primary {
+  background-color: var(--sem-primary);
+  border-color: var(--sem-primary);
+}
+
+.btn-primary:hover {
+  background-color: var(--sem-primary-dark);
+  border-color: var(--sem-primary-dark);
+}
+
+.btn-outline-primary {
+  color: var(--sem-primary);
+  border-color: var(--sem-primary);
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--sem-primary);
+  border-color: var(--sem-primary);
+}
+
+.student-card {
+  border: none;
+  border-left: 4px solid var(--sem-primary);
+}
+
+.form-label {
+  font-weight: 600;
+  font-size: .9rem;
+}
+
+.table thead.table-dark th {
+  border-color: #1f2937;
+}
+
+@media (max-width: 991.98px) {
+  .navbar-user-block {
+    margin-top: .75rem;
+    padding-top: .75rem;
+    border-top: 1px solid rgba(255, 255, 255, .15);
+  }
+
+  .navbar-user-block form {
+    width: 100%;
+  }
+
+  .navbar-user-block form button {
+    width: 100%;
+  }
+}
